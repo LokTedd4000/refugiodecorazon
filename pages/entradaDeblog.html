@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Refugio de animales hecho de corazón para adoptar"
+    />
+    <meta name="keywords" content="refugio, corazón, animales, adoptar" />
+    <meta author="Julieta Nahir Ferreyra" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/icons8-bienestar-32.png"
+      type="image/x-icon"
+    />
+
+    <title>Refugio de Corazones</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navRefugioColor fs-5 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../img/DreamShaper_v7_crear_un_logo_para_un_refugio_de_animales_que_d_3.jpg"
+              alt="Logo panaderia"
+              class="logo shadow"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navRefugio"
+            aria-controls="navRefugio"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navRefugio">
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/login.html"
+                  >Logueate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  type="button"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRef"
+                >
+                  Suscribite
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contactenos.html"
+                  >Contactanos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/acercaDeNosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div
+        class="modal fade"
+        id="modalRef"
+        tabindex="-1"
+        aria-labelledby="modalVentanaRef"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header suscripciones">
+              <h5 class="modal-title" id="modalVentanaRef">¡Suscribite!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="px-3">
+              <form class="row g-3 suscripciones">
+                <div class="col-md-6">
+                  <label for="validacionRefugio01" class="form-label"
+                    >Nombre:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validacionRefugio01"
+                    value="Mark"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="validacionRefugio02" class="form-label"
+                    >Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validacionRefugio02"
+                    value="Otto"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validacionrefugio03" class="form-label"
+                    >Email:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validacionrefugio03"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validacionRefugio04" class="form-label"
+                    >Provincia:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validacionRefugio04"
+                    required
+                  />
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck2"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck2">
+                      Acepto recibir adopciones y publicidad.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 my-2">
+                  <button class="btn botoncitos" type="submit">Acepto</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn botoncitos">
+                Enviar suscripción
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="entradaBlog">
+      <section class="container py-4">
+        <article class="row">
+          <div class="col-sm-12 col-md-8">
+            <h1>
+              La pandemia incrementó el interés de tener una mascota en casa
+            </h1>
+            <h5>
+              Los largos meses de aislamiento y el teletrabajo alentaron en
+              muchas personas la adquisición de perros y gatos, también animales
+              no tradicionales, como compañía. A su vez, las adopciones
+              aumentaron en un 200%.
+            </h5>
+            <p class="fw-bold">
+              La pandemia por el coronavirus ha cambiado drásticamente el mundo
+              en muchos aspectos. De un día para el otro, las personas se
+              encontraron con tiempos, espacios y rutinas muy diferentes a las
+              que tenían antes de la pandemia. Esa nueva realidad les planteo a
+              muchas personas el deseo y la necesidad de tener una mascota de
+              compañía. El vínculo que actualmente tienen las personas con sus
+              animales de compañía y las consecuencias en el futuro, pueden ser
+              analizados por psicólogos y sociólogos, pero también corresponde
+              hacerlo desde la mirada de los veterinarios. Sin lugar a dudas, la
+              pandemia trajo cambios, de rutinas y emocionales para todos. Y la
+              relación entre las personas y los animales de compañía también se
+              vio afectada.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <figure>
+              <img
+                class="w-100"
+                src="/img/perritotierno.jpeg"
+                alt="cara de perrito tierno peludo"
+              />
+            </figure>
+          </div>
+          <div class="col-12">
+            <p class="fw-bold">
+              Llama la atención comparando los últimos 20 años, la gran cantidad
+              de familias que compraron o adoptaron un perro, un gato, o un
+              animal no tradicional. Y por otro lado, como aumentaron las
+              consultas referidas a problemas de conducta, agresión así como de
+              otros temas menores, que en los años previos no eran temas
+              relevantes para los propietarios, y no pedían una consulta.
+            </p>
+            <h2 class="text-center">Lo positivo</h2>
+            <p class="fw-bold">
+              Según especialistas en la materia, la ansiedad y angustia de
+              muchas personas, hace que busquen un animal que les permita
+              canalizar por medio del abrazo, caricias, contacto, que en este
+              momento de pandemia se ve tan limitado. El ser humano necesita
+              indefectiblemente el contacto para expresar el amor y sentir
+              contención. Por otro lado, hubo más tiempo en las casas, y sobre
+              todo las familias con niños eligieron este momento para tener un
+              animal de compañía y que sus hijos compartan juegos y
+              responsabilidades lo que disminuye la ansiedad que genera la falta
+              de salidas y encuentros con amigos. Mucha gente adoptó y no
+              compró. Tal vez la pandemia despertó el sentimiento de piedad para
+              muchos. Hubo un registro mayor sobre aquellos que están solos en
+              este momento donde la compañía se hace tan necesaria. Y esto
+              abarca a los animales de refugios también.
+            </p>
+            <h2 class="text-center">Aspectos negativos</h2>
+            <p class="fw-bold">
+              En muchos casos se generó un hiperapego, problemas de conducta y
+              stress. El desconcierto para muchos, que decidieron incorporar a
+              un animal con el objetivo de beneficiar emocionalmente a la
+              familia, y por el contrario se generó un aumento de tensión por
+              comportamientos normales para ese animal, pero indeseables para la
+              familia o por incompatibilidades en el temperamento.
+            </p>
+            <h2 class="text-center">Una tendencia en aumento</h2>
+            <p class="fw-bold">
+              La adopción de perros durante la pandemia aumentó 200 por ciento,
+              según organizaciones proteccionistas y refugios que se dedican a
+              luchar contra el abandono, el maltrato y el sufrimiento animal.
+              ¿El fundamento? La gente está mucho más tiempo en sus casas y
+              quiere estar acompañada.En nuestro país alrededor del 78 por
+              ciento de los argentinos tiene mascotas en su casa, según una
+              encuesta nacional de mascotas elaborada por Millward Brown
+              Argentina. Esto ubica a Argentina como el país de la región con
+              más mascotas por habitante, seguido por Chile (74 por ciento),
+              México (56 por ciento) y Brasil (43 por ciento). Se estima que hay
+              15 millones de perros y 6 millones de gatos, según datos oficiales
+              de la Cámara Argentina de Empresas de Nutrición Animal (Caena).
+            </p>
+          </div>
+
+          <iframe
+            class="w-100"
+            height="500"
+            src="https://www.youtube.com/embed/ECoLPeJsD2k"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+      <hr class="divisorBlog" />
+      <h2 class="fw-bold text-center">Compartinos que opinas del articulo</h2>
+      <form class="container py-5">
+        <div class="row">
+          <div class="col-4 mx-auto">
+            <input
+              type="text"
+              class="form-control m-3"
+              placeholder="Usuario"
+              aria-label="First name"
+              required
+            />
+            <input
+              type="email"
+              class="form-control m-3"
+              placeholder="Correo"
+              id="inputEmail3"
+              required
+            />
+          </div>
+          <div class="col-12 mx-auto">
+            <label for="comentarioBlog" class="form-label">Comentanos</label>
+            <textarea
+              class="form-control"
+              placeholder="Contanos tu opinión."
+              id="comentarioBlog"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div
+            class="col-12 d-grid gap-2 d-md-flex justify-content-md-end py-3"
+          >
+            <button class="btn btn-dark" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+
+      <section>
+        <h2 class="fw-bold text-center">Comentarios</h2>
+        <div class="container py-5 text-dark">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-12 col-lg-10 col-xl-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(26).webp"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="w-100">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h6 class="text-primary fw-bold mb-0">
+                          DulceCanela
+                          <span class="text-dark ms-2"
+                            >Me encanta este blog. Tiene información muy útil y
+                            práctica para el cuidado de nuestras mascotas.</span
+                          >
+                        </h6>
+                        <p class="mb-0">Hace 2 días</p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="small mb-0" style="color: #aaa">
+                          <a href="#!" class="link-grey">Quitar</a> •
+                          <a href="#!" class="link-grey">Responder</a> •
+                        </p>
+                        <div class="d-flex flex-row">
+                          <i class="fas fa-star text-warning me-2"></i>
+                          <i
+                            class="far fa-check-circle"
+                            style="color: #aaa"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(21).webp"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="w-100">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h6 class="text-primary fw-bold mb-0">
+                          AmorosoCupcake
+                          <span class="text-dark ms-2"
+                            >Este blog es una gran fuente de inspiración para
+                            los amantes de los animales. Me encanta leerlo y
+                            siempre aprendo algo nuevo.
+                          </span>
+                        </h6>
+                        <p class="mb-0">Hace 3 días</p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="small mb-0" style="color: #aaa">
+                          <a href="#!" class="link-grey">Quitar</a> •
+                          <a href="#!" class="link-grey">Responder</a> •
+                        </p>
+                        <div class="d-flex flex-row">
+                          <i class="far fa-check-circle text-primary"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(20).webp"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="w-100">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h6 class="text-primary fw-bold mb-0">
+                          PelucheMimoso
+                          <span class="text-dark ms-2"
+                            >Las mascotas pueden ayudar a mejorar el estado de
+                            ánimo y la salud mental.
+                          </span>
+                        </h6>
+                        <p class="mb-0">Hace 3 días</p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="small mb-0" style="color: #aaa">
+                          <a href="#!" class="link-grey">Quitar</a> •
+                          <a href="#!" class="link-grey">Responder</a> •
+                        </p>
+                        <div class="d-flex flex-row">
+                          <i class="fas fa-user-plus" style="color: #aaa"></i>
+                          <i class="far fa-star mx-2" style="color: #aaa"></i>
+                          <i class="far fa-check-circle text-primary"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(14).webp"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="w-100">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h6 class="text-primary fw-bold mb-0">
+                          CorazónAlegre
+                          <span class="text-dark ms-2"
+                            ><span class="text-primary">@DulceCanela</span>
+                            <span class="text-primary">@AmorosoCupcake</span>
+                            ¡Muchas gracias!
+                          </span>
+                        </h6>
+                        <p class="mb-0">Hace 4 días</p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="small mb-0" style="color: #aaa">
+                          <a href="#!" class="link-grey">Quitar</a> •
+                          <a href="#!" class="link-grey">Responder</a> •
+                        </p>
+                        <div class="d-flex flex-row">
+                          <i class="far fa-check-circle text-primary"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="container-fluid text-center footerRef py-3">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4">
+            <h3 class="py-3 fw-bold">Nuestras redes sociales</h3>
+            <div class="d-flex flex-wrap justify-content-evenly">
+              <div class="py-4">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i
+                    class="fa-brands fa-facebook fa-bounce fa-2xl"
+                    style="color: #a7255d"
+                  ></i
+                ></a>
+              </div>
+              <div class="py-4">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i
+                    class="fa-brands fa-instagram fa-bounce fa-2xl"
+                    style="color: #a7255d"
+                  ></i
+                ></a>
+              </div>
+              <div class="py-4">
+                <a href="https://twitter.com/" target="_blank"
+                  ><i
+                    class="fa-brands fa-square-twitter fa-bounce fa-2xl"
+                    style="color: #a7255d"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="../index.html">
+              <img
+                class="img-fluid shadow"
+                src="/img/DreamShaper_v7_crear_un_logo_para_un_refugio_de_animales_que_d_3.jpg"
+                width="250px"
+                height="auto"
+                alt="Logo Refugio"
+              />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h3 class="py-3 fw-bold">Horarios de atención:</h3>
+            <h5>¡Las 24hs! Siempre estamos disponibles si quieres adoptar.</h5>
+            <h2>Tel.: 381-xxx-xxxx</h2>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f240086186.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.logo {
+  height: 20vh;
+  display: flex;
+  margin-top: 0;
+  padding-top: 0;
+  border-radius: 50%;
+}
+
+.navRefugioColor {
+  background-color: #5c2870;
+  background-image: linear-gradient(19deg, #5c2870 0%, #ddd6f3 100%);
+  text-decoration: none;
+}
+
+
+.bg-slider {
+  background: url(/img/fondo2.jpeg);
+  background-size: cover;
+  padding-top: 25vh;
+}
+
+.carouselRef {
+  display: flex;
+  justify-content: center;
+}
+
+.botoncitos {
+  font-size: 20px;
+  padding: 5px 25px;
+  border-radius: 12px;
+  border: 1px solid #be4980;
+  background: #faaca8;
+  background: linear-gradient(
+    203deg,
+    rgba(250, 172, 168, 1) 46%,
+    rgba(221, 214, 243, 1) 100%
+  );
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.botoncitos h4 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botoncitos h4:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botoncitos:hover h4 {
+  padding-right: 25px;
+}
+
+.botoncitos:hover h4:after {
+  opacity: 1;
+  right: 50px;
+}
+
+.bgCard {
+  background: #d182ff;
+  border-style: double;
+  border-color: #be4980;
+  text-decoration: none;
+}
+
+/* boton donación */
+
+.botonDonacion {
+  background: #faaca8;
+  background: linear-gradient(203deg, rgba(250, 172, 168, 1) 46%, #ddd6f3 100%);
+  border: 1px solid #be4980;
+  border-radius: 12px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.botonDonacion a {
+  text-decoration: none;
+  color: black;
+}
+
+.botonDonacion h3 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botonDonacion h3:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.9s;
+}
+
+.botonDonacion:hover h3 {
+  padding-right: 200px;
+}
+
+.botonDonacion:hover h3:after {
+  opacity: 1;
+  right: 50px;
+}
+
+/* Listado */
+
+.listaRef {
+  border-color: #b95858;
+  border-style: groove;
+  border-radius: 1%;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(44, 3, 15),
+    0 0 5px rgb(153, 39, 83);
+}
+
+.listaRef a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.listaRef li {
+  background: #77302d;
+  color: #f7d3d3;
+  border-bottom-style: dotted;
+  border-color: #be4980;
+}
+
+/* Paginación */
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: rgb(250, 172, 168);
+  border-radius: 50%;
+  border-color: #be4980;
+}
+
+.page-item {
+  padding: 5px;
+  border-color: #be4980;
+}
+
+/* Busqueda */
+.busqueda {
+  background: #b7c4f0;
+  border-radius: 2%;
+  border-style: double;
+  border-color: #4972be;
+}
+
+/* footer */
+.footerRef {
+  background-color: #d2a4a0;
+  padding-bottom: 50vh;
+}
+
+.footerRef img {
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* modal suscripciones */
+
+.suscripciones {
+  background: #d8fdf1;
+}
+
+/* Galeria de imagenes */
+.mainGaleria {
+  background: rgb(199, 163, 247);
+  background: radial-gradient(
+    circle,
+    rgba(199, 163, 247, 1) 64%,
+    rgba(131, 185, 235, 1) 90%
+  );
+  border-style: ridge;
+  border-width: 8px;
+  border-color: #be4980;
+  padding: 15px 10px;
+  margin-top: 149px;
+
+}
+
+.infogaleria:hover h1 {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 170),
+    0 0 5px rgb(134, 0, 139);
+}
+
+.bgGaleriaImagenes {
+  background: #fd4ea9;
+  background: linear-gradient(222deg, #e63f95 41%, rgba(118, 44, 169, 1) 100%);  
+}
+
+.imgGaleria {
+  filter: blur(3px);
+}
+
+.imgGaleria:hover {
+  filter: blur(0px);
+  transition: 0.4s;
+  filter: drop-shadow(7px 7px 9px #86008b);
+}
+
+/* Canela */
+
+.botonCanela {
+  background: #aa5d59;
+  background: linear-gradient(203deg, rgb(163, 101, 98) 46%, #86008b 100%);
+  border: #92edf0;
+  border-radius: 10px;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 3px 2px;
+  cursor: pointer;
+  border-style: dotted;
+  border-width: thick;
+}
+
+.botonCanela a {
+  text-decoration: none;
+  color: white;
+}
+
+.botonCanela h3 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botonCanela h3:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0.9s;
+}
+
+.botonDonacbotonCanelaion:hover h3 {
+  padding-right: 500px;
+}
+
+.botonCanela:hover h3:after {
+  opacity: 1;
+  right: -30px;
+}
+
+/* entrada del blog */
+
+.entradaBlog {
+  background: url(../img/fondoEntrada.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+}
+
+.entradaBlog h2 {
+  color: rgb(28, 10, 104);
+}
+
+.link-grey { color: #aaa; } 
+
+.link-grey:hover { color: #910044; }
+
+.divisorBlog{
+  border: 20px double rgb(100, 2, 84);
+  opacity: 1;
+}
+
+/* Error 404 */
+.margenError{
+  padding-top: 150px;
+}
+
+.botonError404 {
+  padding: 10px 24px;
+  background: #ffc6c6;
+  color: #000000;
+  border-radius: 12px;
+  border: 2px solid #daa2a2;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 12px 16px 0 #ee9f9fa8, 0 17px 50px 0 rgba(173, 131, 131, 0.19);
+  text-decoration: none;
+}
+
+.botonError404:hover {
+  background-color: #daa2a2;
+  border: 2px solid #ffc6c6;
+  transition: 0.5s;
+}
+
+.botonError404:active {
+  background-color: #daa2a2;
+  transform: translateY(4px);
+}
+
+/* Acerca de nosotros */
+
+.bgAcercaDN {
+  background: url(../img/acercaDeNosotros3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sobreNosotros {
+  background: #dadaaf;
+  opacity: 0.9;
+  border-style: inset;
+  border-style: solid;
+  border-color: #050505;
+}
+
+.imgAcerca {
+  border-color: #000000;
+  border-right-style: inset;
+  border-radius: 0 50px 50px 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  box-shadow: 15px 10px 10px #a3a53a;
+}
+
+.sobreNosotrosYo {
+  background: #dadaaf;
+  opacity: 0.9;
+  border-style: inset;
+  border-style: solid;
+  border-color: #050505;
+}
+
+/* Contactanos */
+
+.contactenos {
+  background: url(../img/fondoContactos.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 25vh;
+}
+
+.botonFormulario {
+  padding: 10px 24px;
+  background: #c6e1ff;
+  color: #000000;
+  border-radius: 12px;
+  border: 2px solid #588188;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 12px 16px 0 #9fe5eea8, 0 17px 50px 0 rgba(173, 131, 131, 0.19);
+  text-decoration: none;
+}
+
+/* logueo */
+
+.logueo {
+  background: url(../img/fondoLogueo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-top: 5vh;
+}
+
+.ingreso {
+  background-color: rgba(209, 147, 14, 0.63);
+  width: 95%;
+  border: 5px solid rgb(88, 66, 6);
+  padding: 100px 0;
+  margin: 0 5px;
+}
+
+.botonIngreso {
+  padding: 10px 24px;
+  background: #9e6214;
+  color: #000000;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.modalContraseña {
+  background-color: rgba(117, 84, 11, 0.932);
+}

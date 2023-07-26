@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Refugio de animales hecho de corazón para adoptar"
+    />
+    <meta name="keywords" content="refugio, corazón, animales, adoptar" />
+    <meta author="Julieta Nahir Ferreyra" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/icons8-bienestar-32.png"
+      type="image/x-icon"
+    />
+
+    <title>Refugio de Corazones</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navRefugioColor fs-5 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../img/DreamShaper_v7_crear_un_logo_para_un_refugio_de_animales_que_d_3.jpg"
+              alt="Logo panaderia"
+              class="logo shadow"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navRefugio"
+            aria-controls="navRefugio"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navRefugio">
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/login.html"
+                  >Logueate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  type="button"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRef"
+                >
+                  Suscribite
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contactenos.html"
+                  >Contactanos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/acercaDeNosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="modal fade"
+        id="modalRef"
+        tabindex="-1"
+        aria-labelledby="modalVentanaRef"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header suscripciones">
+              <h5 class="modal-title" id="modalVentanaRef">¡Suscribite!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="px-3">
+              <form class="row g-3 suscripciones">
+                <div class="col-md-6">
+                  <label for="validacionRefugio01" class="form-label"
+                    >Nombre:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validacionRefugio01"
+                    value="Mark"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="validacionRefugio02" class="form-label"
+                    >Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validacionRefugio02"
+                    value="Otto"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validacionrefugio03" class="form-label"
+                    >Email:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validacionrefugio03"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validacionRefugio04" class="form-label"
+                    >Provincia:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validacionRefugio04"
+                    required
+                  />
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck2"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck2">
+                      Acepto recibir adopciones y publicidad.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 my-2">
+                  <button class="btn botoncitos" type="submit">Acepto</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn botoncitos">
+                Enviar suscripción
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bgAcercaDN">
+      <section class="p-4">
+        <h1 class="text-center py-5">
+          <i class="fa-solid fa-paw fa-fade" style="color: #06090e"></i
+          >Conocenos
+          <i class="fa-solid fa-paw fa-fade" style="color: #06090e"></i>
+        </h1>
+        <article class="row p-4">
+          <div class="col-sm-12 col-md-8 sobreNosotros g-0">
+            <p class="p-5 text-center fw-bold ps-4">
+              Bienvenidos a nuestro refugio de animales, un lugar dedicado al
+              rescate y cuidado de animales en situación de vulnerabilidad.
+              Nuestro objetivo principal es brindarles una segunda oportunidad a
+              estos seres maravillosos, encontrándoles hogares amorosos a través
+              de la adopción. Además, nos enorgullece poder ofrecer la
+              posibilidad de publicar a aquellos animales que están listos para
+              ser adoptados, para que puedan encontrar una familia que los ame y
+              los cuide. Nuestro refugio fue fundado por una persona con una
+              pasión inquebrantable por los animales, Julieta Nahir Ferreyra.
+              Desde sus inicios, hace varios años, Julieta ha trabajado
+              incansablemente para rescatar animales en situación de abandono,
+              maltrato o peligro, brindándoles un lugar seguro y el cuidado que
+              necesitan. Su dedicación y amor por los animales han sido la
+              fuerza impulsora detrás del crecimiento y éxito de nuestro
+              refugio. El trayecto del refugio ha sido emocionante y
+              gratificante. Al principio, contábamos con recursos limitados y
+              solo podíamos albergar a unos pocos animales a la vez. Sin
+              embargo, gracias al apoyo de la comunidad y a las donaciones
+              generosas, pudimos expandir nuestras instalaciones y ofrecer un
+              refugio más amplio y cómodo para nuestros animales rescatados. Con
+              el paso del tiempo, hemos logrado establecer alianzas con
+              veterinarios y profesionales del cuidado animal, lo que nos ha
+              permitido brindar una atención médica de calidad a nuestros
+              residentes. También hemos implementado programas de socialización
+              y entrenamiento para preparar a los animales para su futura
+              adopción, garantizando que encuentren hogares amorosos y
+              responsables. A medida que nuestro refugio crecía, también creció
+              nuestra comunidad de voluntarios y adoptantes comprometidos. Estas
+              personas comparten nuestra pasión por los animales y nos brindan
+              un valioso apoyo en la promoción de la adopción y en la difusión
+              de nuestros animales en busca de un hogar. Hoy en día, nos
+              enorgullece decir que hemos logrado encontrar hogares amorosos
+              para numerosos animales y hemos sido testigos de historias de
+              transformación y felicidad. Cada vez que un animal es adoptado,
+              sabemos que hemos cumplido nuestra misión y hemos hecho una
+              diferencia en la vida de un ser vivo. En resumen, nuestro refugio
+              de animales es el resultado del arduo trabajo y la dedicación de
+              una persona apasionada por el bienestar animal. Gracias al apoyo
+              de nuestra comunidad y al compromiso de nuestros voluntarios,
+              hemos logrado crecer y brindar una segunda oportunidad a los
+              animales que más lo necesitan. Seguiremos trabajando
+              incansablemente para hacer del mundo un lugar mejor para nuestros
+              amigos peludos. ¡Te invitamos a unirte a nuestra causa y ser parte
+              de esta hermosa historia de amor y compromiso con los animales!
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4 g-0">
+            <img
+              class="w-100 img-fluid imgAcerca"
+              src="../img/refugio.jpeg"
+              alt="Mansion moderna del refugio con animales al rededor"
+            />
+          </div>
+        </article>
+        <article class="row sobreNosotrosYo text-center">
+          <div class="col-sm-12 col-md-4 p-5">
+            <p class="fw-bold fs-5">
+              Mi nombre es Julieta Nahir Ferreyra y siempre he tenido un amor
+              inmenso por los animales. Desde que era una niña pequeña, me
+              sentía atraída hacia ellos y sentía una conexión especial. A
+              medida que crecí, mi pasión por ayudar a los animales solo se
+              intensificó. Me di cuenta de que había muchos animales
+              desamparados, maltratados y abandonados que necesitaban ayuda
+              desesperadamente. Fue entonces cuando tomé la decisión de abrir un
+              refugio de animales. Quería crear un lugar seguro y amoroso para
+              aquellos animales que habían sido abandonados o maltratados, un
+              lugar donde pudieran recibir atención médica, comida, y, lo más
+              importante, mucho amor y afecto.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <figure>
+              <img class="img-fluid avatar" src="../img/myAvatar.png" alt="avatar" />
+            </figure>
+          </div>
+          <div class="col-sm-12 col-md-4 p-5">
+            <p class="fw-bold fs-5">
+              Fue entonces cuando llegué al nombre "Refugio de Corazones". Para
+              mí, este nombre representaba la idea de que todos los animales
+              merecen amor y un lugar donde puedan sanar y encontrar un nuevo
+              comienzo. En "Refugio de Corazones", nos esforzamos por brindar el
+              mejor cuidado posible a cada animal que llega a nuestras puertas.
+              Trabajamos con veterinarios, entrenadores y voluntarios dedicados
+              para asegurarnos de que cada animal reciba la atención
+              individualizada que necesita. Además, adoptamos una política de no
+              sacrificio y nos esforzamos por encontrar hogares amorosos y
+              permanentes para todos nuestros animales.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section class="container-fluid text-center footerRef py-3">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4">
+            <h3 class="py-3 fw-bold">Nuestras redes sociales</h3>
+            <div class="d-flex flex-wrap justify-content-evenly">
+              <div class="py-4">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i
+                    class="fa-brands fa-facebook fa-bounce fa-2xl"
+                    style="color: #a7255d"
+                  ></i
+                ></a>
+              </div>
+              <div class="py-4">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i
+                    class="fa-brands fa-instagram fa-bounce fa-2xl"
+                    style="color: #a7255d"
+                  ></i
+                ></a>
+              </div>
+              <div class="py-4">
+                <a href="https://twitter.com/" target="_blank"
+                  ><i
+                    class="fa-brands fa-square-twitter fa-bounce fa-2xl"
+                    style="color: #a7255d"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="../index.html">
+              <img
+                class="img-fluid shadow"
+                src="/img/DreamShaper_v7_crear_un_logo_para_un_refugio_de_animales_que_d_3.jpg"
+                width="250px"
+                height="auto"
+                alt="Logo Refugio"
+              />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h3 class="py-3 fw-bold">Horarios de atención:</h3>
+            <h5>¡Las 24hs! Siempre estamos disponibles si quieres adoptar.</h5>
+            <h2>Tel.: 381-xxx-xxxx</h2>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f240086186.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
